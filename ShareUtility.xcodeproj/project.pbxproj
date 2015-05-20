@@ -14,6 +14,7 @@
 		9F93B7931B0C296900033B6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F93B7921B0C296900033B6F /* Images.xcassets */; };
 		9F93B7961B0C296900033B6F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F93B7941B0C296900033B6F /* LaunchScreen.xib */; };
 		9F93B7A21B0C296900033B6F /* ShareUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93B7A11B0C296900033B6F /* ShareUtilityTests.m */; };
+		9F93B7AE1B0C2A2900033B6F /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93B7AD1B0C2A2900033B6F /* NSString+MD5Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		9F93B79B1B0C296900033B6F /* ShareUtilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareUtilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F93B7A01B0C296900033B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F93B7A11B0C296900033B6F /* ShareUtilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareUtilityTests.m; sourceTree = "<group>"; };
+		9F93B7AC1B0C2A2900033B6F /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		9F93B7AD1B0C2A2900033B6F /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 				9F93B78C1B0C296900033B6F /* ViewController.h */,
 				9F93B78D1B0C296900033B6F /* ViewController.m */,
 				9F93B78F1B0C296900033B6F /* Main.storyboard */,
+				9F93B7AB1B0C2A1500033B6F /* Encryption */,
 				9F93B7921B0C296900033B6F /* Images.xcassets */,
 				9F93B7941B0C296900033B6F /* LaunchScreen.xib */,
 				9F93B7851B0C296900033B6F /* Supporting Files */,
@@ -117,6 +121,15 @@
 				9F93B7A01B0C296900033B6F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F93B7AB1B0C2A1500033B6F /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				9F93B7AC1B0C2A2900033B6F /* NSString+MD5Addition.h */,
+				9F93B7AD1B0C2A2900033B6F /* NSString+MD5Addition.m */,
+			);
+			path = Encryption;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				9F93B78E1B0C296900033B6F /* ViewController.m in Sources */,
 				9F93B78B1B0C296900033B6F /* AppDelegate.m in Sources */,
+				9F93B7AE1B0C2A2900033B6F /* NSString+MD5Addition.m in Sources */,
 				9F93B7881B0C296900033B6F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

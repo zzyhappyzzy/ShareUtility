@@ -75,4 +75,52 @@
     return str;
 }
 
+//二进制数据的md5码   32位小写
+- (NSString *)stringFromMD5With32LowerCaseAndData:(NSData *)data {
+    CC_MD5_CTX md5;
+    CC_MD5_Init(&md5);
+    const char *buf = [data bytes];
+    CC_MD5_Update(&md5, buf, (CC_LONG)data.length);
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5_Final(digest, &md5);
+    NSMutableString *result = [[NSMutableString alloc] init];
+    for(size_t i=0; i<sizeof(digest); i++) {
+        [result appendFormat:@"%02x",digest[i]];
+    }
+    return result;
+}
+
+//本地文件的md5码   32位小写
+- (NSString *)stringFromMD5With32LowerCaseAndFilePath:(NSString *)filePath {
+    NSFileHandle *handle = [NSFileHandle fileHandleForReadingAtPath:filePath];
+    if( handle == nil ) {
+        return nil;
+    }
+    
+    CC_MD5_CTX md5;
+    CC_MD5_Init(&md5);
+    
+    BOOL done = NO;
+    int a = 0;
+    while(!done) {
+        a++;
+        NSLog(@"%d",a);
+        NSData *fileData = [handle readDataOfLength:102400]; //每次读取100K
+        CC_MD5_Update(&md5, [fileData bytes], (CC_LONG)[fileData length]);
+        if([fileData length] == 0 ) {
+            done = YES;
+        }
+    }
+    
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5_Final(digest, &md5);
+    
+    NSMutableString *result = [[NSMutableString alloc] init];
+    for(size_t i=0; i<sizeof(digest); i++) {
+        [result appendFormat:@"%02x",digest[i]];
+    }
+    
+    return result;
+}
+
 @end

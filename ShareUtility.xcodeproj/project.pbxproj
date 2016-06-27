@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4790FCC81D212C5E00EE4D26 /* CommonUsefulHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUsefulHeader.h; sourceTree = "<group>"; };
 		9F93B7821B0C296900033B6F /* ShareUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F93B7861B0C296900033B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F93B7871B0C296900033B6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -63,6 +64,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4790FCC71D212C5E00EE4D26 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				4790FCC81D212C5E00EE4D26 /* CommonUsefulHeader.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
 		9F93B7791B0C296900033B6F = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +98,7 @@
 				9F93B78C1B0C296900033B6F /* ViewController.h */,
 				9F93B78D1B0C296900033B6F /* ViewController.m */,
 				9F93B78F1B0C296900033B6F /* Main.storyboard */,
+				4790FCC71D212C5E00EE4D26 /* Macros */,
 				9F93B7AB1B0C2A1500033B6F /* Encryption */,
 				9F93B7921B0C296900033B6F /* Images.xcassets */,
 				9F93B7941B0C296900033B6F /* LaunchScreen.xib */,
@@ -430,6 +440,7 @@
 				9F93B7A71B0C296900033B6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F93B7A81B0C296900033B6F /* Build configuration list for PBXNativeTarget "ShareUtilityTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +449,7 @@
 				9F93B7AA1B0C296900033B6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

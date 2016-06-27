@@ -14,19 +14,22 @@
  就好比破解16位MD5散列不见得比破解32位MD5散列快~
  因为他多了一个步骤就是加密后再把中间16位提取出来~ 然后再进行对比
  而破解32位的则不需要~ 加密后直接对比~
- 当然以前可能会误解32位加密比16位加密安全！为什么？ 因为32位的长啊~ (呵呵,真BC)
  */
 
 #import <Foundation/Foundation.h>
 
 @interface NSString(MD5Addition)
 
-//16
+//16 字符串
 - (NSString *)stringFromMD5With16LowerCase;
 - (NSString *)stringFromMD5With16UpperCase;
 
-//32
+//32 字符串
 - (NSString *)stringFromMD5With32LowerCase;
 - (NSString *)stringFromMD5With32UpperCase;
+
+//32 文件(其他类型参考字符串)
+- (NSString *)stringFromMD5With32LowerCaseAndData:(NSData *)data;
+- (NSString *)stringFromMD5With32LowerCaseAndFilePath:(NSString *)filePath;
 
 @end

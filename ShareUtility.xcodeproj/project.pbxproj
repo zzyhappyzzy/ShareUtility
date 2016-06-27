@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4790FCCC1D213CEE00EE4D26 /* NSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4790FCCB1D213CEE00EE4D26 /* NSWeakTimer.m */; };
 		9F93B7881B0C296900033B6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93B7871B0C296900033B6F /* main.m */; };
 		9F93B78B1B0C296900033B6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93B78A1B0C296900033B6F /* AppDelegate.m */; };
 		9F93B78E1B0C296900033B6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93B78D1B0C296900033B6F /* ViewController.m */; };
@@ -29,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		4790FCC81D212C5E00EE4D26 /* CommonUsefulHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUsefulHeader.h; sourceTree = "<group>"; };
+		4790FCCA1D213CEE00EE4D26 /* NSWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWeakTimer.h; sourceTree = "<group>"; };
+		4790FCCB1D213CEE00EE4D26 /* NSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSWeakTimer.m; sourceTree = "<group>"; };
 		9F93B7821B0C296900033B6F /* ShareUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F93B7861B0C296900033B6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F93B7871B0C296900033B6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +75,15 @@
 			path = Macros;
 			sourceTree = "<group>";
 		};
+		4790FCC91D213CBA00EE4D26 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				4790FCCA1D213CEE00EE4D26 /* NSWeakTimer.h */,
+				4790FCCB1D213CEE00EE4D26 /* NSWeakTimer.m */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
 		9F93B7791B0C296900033B6F = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +110,7 @@
 				9F93B78C1B0C296900033B6F /* ViewController.h */,
 				9F93B78D1B0C296900033B6F /* ViewController.m */,
 				9F93B78F1B0C296900033B6F /* Main.storyboard */,
+				4790FCC91D213CBA00EE4D26 /* Timer */,
 				4790FCC71D212C5E00EE4D26 /* Macros */,
 				9F93B7AB1B0C2A1500033B6F /* Encryption */,
 				9F93B7921B0C296900033B6F /* Images.xcassets */,
@@ -243,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F93B78E1B0C296900033B6F /* ViewController.m in Sources */,
+				4790FCCC1D213CEE00EE4D26 /* NSWeakTimer.m in Sources */,
 				9F93B78B1B0C296900033B6F /* AppDelegate.m in Sources */,
 				9F93B7AE1B0C2A2900033B6F /* NSString+MD5Addition.m in Sources */,
 				9F93B7881B0C296900033B6F /* main.m in Sources */,

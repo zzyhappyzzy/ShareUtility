@@ -9,11 +9,13 @@
 #ifndef CommonUsefulHeader_h
 #define CommonUsefulHeader_h
 
-//system version number(sdk9.0++)(https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/TransitionGuide/SupportingEarlieriOS.html#//apple_ref/doc/uid/TP40013174-CH14-SW1)
+//system version number(sdk10.0++)
 #define LESS_THAN_OR_EQUAL_IOS6 ((floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) ? YES : NO)
 #define LESS_THAN_OR_EQUAL_IOS7 ((floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_7_1) ? YES : NO)
 #define LESS_THAN_OR_EQUAL_IOS8 ((floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_8_4) ? YES : NO)
+#define LESS_THAN_OR_EQUAL_IOS9 ((floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_9_4) ? YES : NO)
 #define GREATER_THAN_IOS8 ((floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_8_4) ? YES : NO)
+#define GREATER_THAN_IOS9 ((floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_9_4) ? YES : NO)
 
 /*
  #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)

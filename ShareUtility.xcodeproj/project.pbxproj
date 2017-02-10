@@ -16,6 +16,10 @@
 		9F93B7961B0C296900033B6F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F93B7941B0C296900033B6F /* LaunchScreen.xib */; };
 		9F93B7A21B0C296900033B6F /* ShareUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93B7A11B0C296900033B6F /* ShareUtilityTests.m */; };
 		9F93B7AE1B0C2A2900033B6F /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93B7AD1B0C2A2900033B6F /* NSString+MD5Addition.m */; };
+		9FB417841E4DAEA500A6D7B8 /* ZZYMaxInputNumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB417831E4DAEA500A6D7B8 /* ZZYMaxInputNumManager.m */; };
+		9FB417881E4DB2CE00A6D7B8 /* ZZYImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB417871E4DB2CE00A6D7B8 /* ZZYImageManager.m */; };
+		9FB4178C1E4DBA7C00A6D7B8 /* ZZYCalendarInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4178B1E4DBA7C00A6D7B8 /* ZZYCalendarInfo.m */; };
+		9FB4178F1E4DBB2A00A6D7B8 /* ZZYCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4178E1E4DBB2A00A6D7B8 /* ZZYCalendarManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,14 @@
 		9F93B7A11B0C296900033B6F /* ShareUtilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareUtilityTests.m; sourceTree = "<group>"; };
 		9F93B7AC1B0C2A2900033B6F /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
 		9F93B7AD1B0C2A2900033B6F /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		9FB417821E4DAEA500A6D7B8 /* ZZYMaxInputNumManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZYMaxInputNumManager.h; sourceTree = "<group>"; };
+		9FB417831E4DAEA500A6D7B8 /* ZZYMaxInputNumManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZYMaxInputNumManager.m; sourceTree = "<group>"; };
+		9FB417861E4DB2CE00A6D7B8 /* ZZYImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZYImageManager.h; sourceTree = "<group>"; };
+		9FB417871E4DB2CE00A6D7B8 /* ZZYImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZYImageManager.m; sourceTree = "<group>"; };
+		9FB4178A1E4DBA7C00A6D7B8 /* ZZYCalendarInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZYCalendarInfo.h; sourceTree = "<group>"; };
+		9FB4178B1E4DBA7C00A6D7B8 /* ZZYCalendarInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZYCalendarInfo.m; sourceTree = "<group>"; };
+		9FB4178D1E4DBB2A00A6D7B8 /* ZZYCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZYCalendarManager.h; sourceTree = "<group>"; };
+		9FB4178E1E4DBB2A00A6D7B8 /* ZZYCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZYCalendarManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +122,9 @@
 				9F93B78C1B0C296900033B6F /* ViewController.h */,
 				9F93B78D1B0C296900033B6F /* ViewController.m */,
 				9F93B78F1B0C296900033B6F /* Main.storyboard */,
+				9FB417891E4DBA6300A6D7B8 /* Calendar */,
+				9FB417851E4DB2AF00A6D7B8 /* Image */,
+				9FB417811E4DAE6D00A6D7B8 /* Input */,
 				4790FCC91D213CBA00EE4D26 /* Timer */,
 				4790FCC71D212C5E00EE4D26 /* Macros */,
 				9F93B7AB1B0C2A1500033B6F /* Encryption */,
@@ -153,6 +168,35 @@
 				9F93B7AD1B0C2A2900033B6F /* NSString+MD5Addition.m */,
 			);
 			path = Encryption;
+			sourceTree = "<group>";
+		};
+		9FB417811E4DAE6D00A6D7B8 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				9FB417821E4DAEA500A6D7B8 /* ZZYMaxInputNumManager.h */,
+				9FB417831E4DAEA500A6D7B8 /* ZZYMaxInputNumManager.m */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		9FB417851E4DB2AF00A6D7B8 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				9FB417861E4DB2CE00A6D7B8 /* ZZYImageManager.h */,
+				9FB417871E4DB2CE00A6D7B8 /* ZZYImageManager.m */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		9FB417891E4DBA6300A6D7B8 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				9FB4178A1E4DBA7C00A6D7B8 /* ZZYCalendarInfo.h */,
+				9FB4178B1E4DBA7C00A6D7B8 /* ZZYCalendarInfo.m */,
+				9FB4178D1E4DBB2A00A6D7B8 /* ZZYCalendarManager.h */,
+				9FB4178E1E4DBB2A00A6D7B8 /* ZZYCalendarManager.m */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,11 +299,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB417841E4DAEA500A6D7B8 /* ZZYMaxInputNumManager.m in Sources */,
 				9F93B78E1B0C296900033B6F /* ViewController.m in Sources */,
+				9FB4178F1E4DBB2A00A6D7B8 /* ZZYCalendarManager.m in Sources */,
 				4790FCCC1D213CEE00EE4D26 /* NSWeakTimer.m in Sources */,
+				9FB417881E4DB2CE00A6D7B8 /* ZZYImageManager.m in Sources */,
 				9F93B78B1B0C296900033B6F /* AppDelegate.m in Sources */,
 				9F93B7AE1B0C2A2900033B6F /* NSString+MD5Addition.m in Sources */,
 				9F93B7881B0C296900033B6F /* main.m in Sources */,
+				9FB4178C1E4DBA7C00A6D7B8 /* ZZYCalendarInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

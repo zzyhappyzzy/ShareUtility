@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@protocol HZTMaxInputNumManagerDelegate <NSObject>
+@protocol ZZYMaxInputNumManagerDelegate <NSObject>
 @optional
 - (void)keyboardReturnBtnClicked; //点击键盘的return按钮
 - (void)userInputTextDidChange:(NSString *)str; //当前已输入的文字（实时变化，可用于计算剩余字数）
@@ -21,7 +21,7 @@
 
 @interface ZZYMaxInputNumManager : NSObject
 
-@property (nonatomic, weak) id<HZTMaxInputNumManagerDelegate>delegate;
+@property (nonatomic, weak) id<ZZYMaxInputNumManagerDelegate>delegate;
 
 - (void)addMaxInputTarget:(UIView<UITextInput>*)target maxCnt:(int)maxCnt;
 

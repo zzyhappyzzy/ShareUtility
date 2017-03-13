@@ -1,4 +1,6 @@
 # ShareUtility
+[![Build Status](https://travis-ci.org/zzyhappyzzy/ShareUtility.svg?branch=master)](https://travis-ci.org/zzyhappyzzy/ShareUtility)
+
 # Summary
 * `Calendar` 日历控件核心代码
 * `Entryption` MD5码生成(字符串、文件MD5对比)

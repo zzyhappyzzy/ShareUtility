@@ -18,7 +18,7 @@
         CGFloat xScaleFactor = imgWidthPx / sizePx.width;
         CGFloat yScaleFactor = imgHeightPx / sizePx.height;
         CGFloat scaleFactor = xScaleFactor > yScaleFactor ? xScaleFactor : yScaleFactor;
-        CGSize tmpSize = CGSizeMake(imgWidthPx/scaleFactor, imgHeightPx/scaleFactor);
+        CGSize tmpSize = CGSizeMake(round(imgWidthPx/scaleFactor), round(imgHeightPx/scaleFactor));
         UIGraphicsBeginImageContextWithOptions(tmpSize, NO, 1.0);
         [image drawInRect:CGRectMake(0, 0, tmpSize.width, tmpSize.height)];
         UIImage *redrawImg = UIGraphicsGetImageFromCurrentImageContext();

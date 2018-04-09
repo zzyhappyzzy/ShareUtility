@@ -16,7 +16,7 @@
  等比重画到指定像素范围内
 
  @param image 源图片
- @param size 尺寸(注意：单位像素px，非point)
+ @param size 尺寸(注意：单位是像素px，非point)
  @return 重画后的图片
  */
 + (UIImage *)redrawImage:(UIImage *)image toSize:(CGSize)sizePx;

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(int,ScopeType) {
-    kScopeTypeDay = 0,   //选择日期
+    kScopeTypeDay = 0,   //选择具体天数
     kScopeTypeMonth = 1  //选择月份
 };
 
